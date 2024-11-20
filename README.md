@@ -1,14 +1,14 @@
 # evilHangman
-INSTRUCTIONS
-In a normal game of hangman, the computer picks a word that doesn’t change, and
+## INSTRUCTIONS
+*In a normal game of hangman, the computer picks a word that doesn’t change, and
 then the user is supposed to guess. The user guesses individual letters until the word is
 fully discovered. If you aren’t familiar with the general rules of the game of hangman,
 review its Wikipedia page: http://en.wikipedia.org/wiki/Hangman_(game).
-In our game of hangman, the computer delays picking a word until it is forced to. As a
+*In our game of hangman, the computer delays picking a word until it is forced to. As a
 result, the computer is always considering a set of words that could be the answer. In
 order to fool the user into thinking it is playing fairly, the computer only considers words
 with the same letter pattern.
-For example, suppose that the computer knows the words in the following dictionary
+*For example, suppose that the computer knows the words in the following dictionary
 ALLY BETA COOL DEAL ELSE FLEW GOOD HOPE IBEX
 
 In a normal game of hangman, the computer would start the game by choosing a word
