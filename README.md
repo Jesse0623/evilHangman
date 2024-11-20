@@ -17,13 +17,13 @@ narrows down its set of possible answers as the user makes guesses. In the log b
 the user’s first guess is 'e'. The computer has to reveal where the letter 'e' appears but
 since it hasn't chosen an answer, it has several options. In particular, note that the
 dictionary's words fall into 5 families:
- ---- is the pattern for [ally, cool, good]
- e--- is an empty pattern with no possible values.
- -e-- is the pattern for [beta, deal]
- --e- is the pattern for [flew, ibex]
- ---e is the pattern for [hope]
- e--e is the pattern for [else]
- all other patterns are empty.
+1. ---- is the pattern for [ally, cool, good]
+2. e--- is an empty pattern with no possible values.
+3. -e-- is the pattern for [beta, deal]
+4. --e- is the pattern for [flew, ibex]
+5. ---e is the pattern for [hope]
+6. e--e is the pattern for [else]
+7. all other patterns are empty.
 The computer could choose to reveal any of these 5 patterns. It could use several
 different strategies for picking the family to display. For this project, your program will
 always choose the largest of the remaining word families. This will leave the
@@ -32,8 +32,8 @@ described above, the computer would pick ----. This reduces the possible answers
 can consider to: ally cool good. Since the computer didn't reveal any letters, it
 counts this as a wrong guess and decreases the number of guesses left to 6.
 Next, the user guesses the letter 'o'. The computer has two word families to consider:
- -oo- is the pattern for [cool, good]
- ---- is the pattern for [ally]
+1. -oo- is the pattern for [cool, good]
+2. ---- is the pattern for [ally]
 It picks the biggest family and reveals the letter 'o' in two places. This was a correct guess so
 the user still has 6 guesses left. The computer now has only two possible answers to choose
 from: cool good
